@@ -1,0 +1,111 @@
+// home
+.home {
+  padding: 128px 0;
+  background-image: url('../images/home_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 68%;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(242, 246, 255, 0.8) 15.74%, rgba(242, 246, 255, 0) 145.65%);
+  }
+
+  &_in {
+    max-width: 1715px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 33px;
+    position: relative;
+    z-index: 2;
+  }
+
+  &_text {
+    h1 {
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $color-blue;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 100%;
+      text-transform: uppercase;
+      color: $color-dark;
+      max-width: 642px;
+    }
+  }
+
+  &_form {
+    h3 {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 100%;
+      text-align: center;
+      color: $color-dark-2;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 100%;
+      text-align: center;
+      margin: 8px 0 12px 0;
+      color: $color-dark-2;
+
+      span {
+        color: $color-blue;
+        font-weight: 600;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 454px;
+      margin: auto;
+    }
+
+    input {
+      height: 46px;
+      font-weight: 250;
+      font-size: 18px;
+      line-height: 100%;
+      color: $color-grey-2;
+      padding: 12px 8px;
+      border-radius: 3px;
+      border: .5px solid #B3B3B3;
+      background: $color-white;
+    }
+
+    button {
+      font-weight: 800;
+      font-size: 26px;
+      line-height: 100%;
+      color: $color-white;
+      border: .5px solid #B3B3B3;
+      background: $color-blue;
+      color: $color-white;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}
+// home
