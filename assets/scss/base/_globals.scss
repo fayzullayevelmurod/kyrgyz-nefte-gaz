@@ -75,3 +75,23 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-top: 50px;
   }
 }
+
+.blue_btn {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: $color-white;
+  background: $color-blue;
+  height: 54px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 334px;
+
+  @include media('lg') {
+    padding: 10px 8px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
