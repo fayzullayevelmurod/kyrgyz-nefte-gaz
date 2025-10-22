@@ -1,0 +1,95 @@
+// comment
+.comment {
+  max-width: 1715px;
+  margin: 120px auto auto auto;
+  padding: 0 20px;
+
+  &_in {
+    display: flex;
+    gap: 32px;
+
+    @include media('xl') {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    @include media('lg') {
+      grid-template-columns: repeat(1,1fr);
+      gap: 16px;
+    }
+  }
+
+  &_block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  h2 {
+    font-weight: 1000;
+    font-size: 55px;
+    line-height: 100%;
+    text-align: center;
+    color: $color-black;
+    margin-bottom: 55px;
+
+    @include media('lg') {
+      width: max-content;
+      font-size: 29px;
+      padding-bottom: 8px;
+      margin: auto auto 14px auto;
+      border-bottom: .5px solid $color-blue;
+    }
+
+    @include media('xs') {
+      width: auto;
+    }
+  }
+
+  h6 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 100%;
+    color: #3d3d3d;
+    padding-bottom: 4px;
+    border-bottom: .5px solid $color-blue;
+    width: max-content;
+
+    @include media('lg') {
+      font-size: 20px;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 100%;
+    color: #3d3d3d;
+
+    @include media('lg') {
+      font-size: 16px;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #455A64;
+    margin-left: auto;
+
+    svg {
+      display: flex;
+      flex-shrink: 0;
+    }
+
+
+    @include media('lg') {
+      gap: 8px;
+    }
+  }
+}
+// comment
