@@ -961,6 +961,115 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.investors {
+  max-width: 1300px;
+  padding: 0 20px;
+  margin: 120px auto 0 auto;
+}
+@media (max-width: 1024px) {
+  .investors {
+    margin: 50px auto auto auto;
+  }
+}
+.investors h2 {
+  font-weight: 1000;
+  font-size: 55px;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 55px;
+}
+@media (max-width: 1024px) {
+  .investors h2 {
+    margin-bottom: 32px;
+    font-size: 29px;
+    line-height: 28px;
+  }
+}
+.investors_in {
+  max-width: 990px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
+}
+@media (max-width: 1280px) {
+  .investors_in {
+    gap: 28px;
+  }
+}
+@media (max-width: 1024px) {
+  .investors_in {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .investors_in {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.investors_in img {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: flex;
+  flex-shrink: 0;
+}
+.investors_block {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+.investors_block h6 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: #333333;
+}
+@media (max-width: 1024px) {
+  .investors_block h6 {
+    font-size: 16px;
+  }
+}
+.investors_block span {
+  width: -moz-max-content;
+  width: max-content;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
+  color: #FFFFFF;
+  border-radius: 3px;
+  background: #336CFA;
+  padding: 6px 12px;
+}
+@media (max-width: 1024px) {
+  .investors_block span {
+    font-size: 14px;
+  }
+}
+.investors_text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.investors_text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.investors_text ul li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #333333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .contact {
   padding: 80px 0;
   background-image: url("../images/contact_bg.jpg");
